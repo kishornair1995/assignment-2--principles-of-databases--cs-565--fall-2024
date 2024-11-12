@@ -25,8 +25,18 @@ function getComputerInventory($pdo) {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 function getOSSupport($pdo) {
-    $stmt = $pdo->prepare("SELECT model, installed_os, last_supported_os FROM os_support ORDER BY model ASC");
+    $stmt = $pdo->prepare("SELECT model, installed_os, last_supported_os
+                           FROM os_support
+                           ORDER BY FIELD(model,
+                                'MacBook (Retina, 12-inch, Early 2015)',
+                                'MacBook Pro (15-inch, 2.53GHz, Mid 2009)',
+                                'MacBook Pro (15-inch, 2016)',
+                                'iMac (Retina 5K, 27-inch, Late 2014)',
+                                'Mac Pro (Late 2013)',
+                                'MacBook Pro (15-inch, 2.4GHz, Mid 2010)',
+                                'Mac Pro (Mid 2010)')");
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
 ?>
