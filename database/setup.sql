@@ -55,7 +55,7 @@ INSERT INTO macOS_versions (version_name, release_name, darwin_os_number, date_a
 ('OS X 10.8', 'Mountain Lion', '12', '2012-02-16', '2012-07-25', '2015-08-13'),
 ('OS X 10.9', 'Mavericks', '13', '2013-06-10', '2013-10-22', '2016-07-18'),
 ('OS X 10.10', 'Yosemite', '14', '2014-06-02', '2014-10-16', '2017-07-19'),
-('OS X 10.11', 'El Capitan', '15', '2015-06-08', '2015-09-30', '2018-07-09'),
+('OS X 10.11', 'El Capitán', '15', '2015-06-08', '2015-09-30', '2018-07-09'),
 ('macOS 10.12', 'Sierra', '16', '2016-06-13', '2016-09-20', '2019-10-26'),
 ('macOS 10.13', 'High Sierra', '17', '2017-06-05', '2017-09-25', '2020-11-12'),
 ('macOS 10.14', 'Mojave', '18', '2018-06-04', '2018-09-24', '2021-07-21'),
@@ -78,8 +78,8 @@ INSERT INTO computer_inventory (model_name, model_identifier, model_number, part
 
 -- Insert data into os_support table
 INSERT INTO os_support (model, installed_os, last_supported_os) VALUES
-('MacBook (Retina, 12-inch, Early 2015)', 'El Capitan', 'Big Sur'),
-('MacBook Pro (15-inch, 2.53GHz, Mid 2009)', 'Leopard', 'El Capitan'),
+('MacBook (Retina, 12-inch, Early 2015)', 'El Capitán', 'Big Sur'),
+('MacBook Pro (15-inch, 2.53GHz, Mid 2009)', 'Leopard', 'El Capitán'),
 ('MacBook Pro (15-inch, 2016)', 'High Sierra', 'Monterey'),
 ('iMac (Retina 5K, 27-inch, Late 2014)', 'Yosemite', 'Big Sur'),
 ('Mac Pro (Late 2013)', 'Mojave', 'Monterey'),
